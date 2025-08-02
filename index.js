@@ -1,4 +1,5 @@
 const { Client, EmbedBuilder } = require("discord.js");
+require("dotenv").config();
 
 const client = new Client({ intents: 53608447 });
 
@@ -104,4 +105,4 @@ client.on("ready", () => {
   console.log(`✅ Logged in as ${client.user.tag}!`);
 });
 
-client.login("MTQwMDQ1NDUyNzk1MzY2NjE2OA.GIxxKf.ln6CPx1wzK-x8eg_2jDMUqWaK7_v-i9WnN-HLo"); // Your bot token here
+client.login(process.env.DISCORD_TOKEN); // Your bot token here
