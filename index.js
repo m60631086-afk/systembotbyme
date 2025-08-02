@@ -1,6 +1,6 @@
 const { Client, EmbedBuilder } = require("discord.js");
 require("dotenv").config();
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 
 const client = new Client({ intents: 53608447 });
 
